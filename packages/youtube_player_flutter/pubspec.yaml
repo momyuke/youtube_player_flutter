@@ -4,6 +4,18 @@ version: 9.0.4
 repository: https://github.com/sarbagyastha/youtube_player_flutter
 homepage: https://github.com/sarbagyastha/youtube_player_flutter/tree/master/packages/youtube_player_flutter
 
+dependency_overrides:
+  flutter_inappwebview_android: # https://github.com/pichillilorenzo/flutter_inappwebview/issues/2139
+    git:
+      url: https://github.com/navaronbracke/flutter_inappwebview.git
+      path: flutter_inappwebview_android
+      ref: android_release_mode_hotfix
+  flutter_inappwebview_platform_interface: # https://github.com/pichillilorenzo/flutter_inappwebview/issues/2139
+    git:
+      url: https://github.com/navaronbracke/flutter_inappwebview.git
+      path: flutter_inappwebview_platform_interface
+      ref: android_release_mode_hotfix
+
 environment:
   sdk: '>=3.0.0 <4.0.0'
   flutter: '>=3.0.0'
