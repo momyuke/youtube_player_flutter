@@ -24,6 +24,7 @@ dependencies:
     git:
       url: https://github.com/navaronbracke/flutter_inappwebview.git
       ref: android_release_mode_hotfix
+      path: flutter_inappwebview
 
 dev_dependencies:
   flutter_test:
