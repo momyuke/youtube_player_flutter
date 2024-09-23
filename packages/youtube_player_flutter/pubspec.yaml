@@ -6,11 +6,11 @@ homepage: https://github.com/sarbagyastha/youtube_player_flutter/tree/master/pac
 
 dependency_overrides:
   # TODO: Recheck once flutter_inappwebview version >6.0.0 is released
-  flutter_inappwebview_android:
-    git:
-      url: https://github.com/holzgeist/flutter_inappwebview
-      path: flutter_inappwebview_android
-      ref: d89b1d32638b49dfc58c4b7c84153be0c269d057
+  # flutter_inappwebview_android:
+  #   git:
+  #     url: https://github.com/holzgeist/flutter_inappwebview
+  #     path: flutter_inappwebview_android
+  #     ref: d89b1d32638b49dfc58c4b7c84153be0c269d057
 
 environment:
   sdk: '>=3.0.0 <4.0.0'
@@ -19,7 +19,11 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  flutter_inappwebview: ^6.0.0
+  # flutter_inappwebview: ^6.0.0
+  flutter_inappwebview:
+    git:
+      url: https://github.com/navaronbracke/flutter_inappwebview.git
+      ref: android_release_mode_hotfix
 
 dev_dependencies:
   flutter_test:
